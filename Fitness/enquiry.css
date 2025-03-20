@@ -1,0 +1,127 @@
+/* Body settings to center the form */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+/* Navbar styles */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.769);
+}
+
+/* Prevent navbar overlap */
+.container {
+    max-width: 400px;
+    width: 90%;
+    background-color: black;
+    border: 2px solid rgba(255, 0, 0, 0.769);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    margin-top: 100px; /* Prevent navbar overlap */
+}
+
+/* Form heading */
+h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+span {
+    color: rgba(255, 0, 0, 0.769);
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+/* Input fields */
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 0, 0, 0.769);
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+/* Highlight input when clicked */
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.769);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+/* Background text */
+body::before {
+    content: "STAG FITNESS";
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300px;
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.1);
+    z-index: -1;
+    text-transform: uppercase;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body::before {
+        font-size: 100px; /* Reduce size for tablets */
+        top: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    body::before {
+        font-size: 50px; /* Reduce size for mobile */
+        top: 40%;
+    }
+}
+
+/* Logo */
+.logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
